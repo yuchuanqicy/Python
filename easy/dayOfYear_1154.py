@@ -8,6 +8,3 @@ class Solution:
         year=int(string[0])
         print(year)
 
-s=Solution()
-print(s.dayOfYear2("2021-12-20"))
-
