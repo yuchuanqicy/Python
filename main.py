@@ -1,9 +1,9 @@
 
-from easy.singleNumber_136 import singleNumber
+from easy.pivotInteger_2485 import *
 
 def main():
-    s=singleNumber()
-    print(s.singleNumber_1([4,1,1,4,5]))
+    s=pivotInteger_2485()
+    print(s.pivotInteger(8))
 if __name__ == '__main__':
 
     main()
