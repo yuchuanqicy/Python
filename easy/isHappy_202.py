@@ -1,6 +1,6 @@
 class Solution:
-
-   def isHappy(self,n):
+   # 判断一个数是不是快乐数
+   def isHappy_1(self,n):
 
        def getNext(n):
            totalSum = 0
@@ -15,4 +15,9 @@ class Solution:
             n=getNext(n)
 
        return n==1
+
+   def isHappy_2(self,n):
+        pass
+
+
 
