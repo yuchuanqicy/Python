@@ -22,6 +22,8 @@ class Solution:
             while n>0:
                 n,m=divmod(n,10)
                 totalSum+=m**2
+
+
             return totalSum
         slow_Num=n
         fast_Num=getNext(n)
