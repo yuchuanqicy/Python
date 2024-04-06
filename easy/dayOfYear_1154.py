@@ -7,4 +7,3 @@ class Solution:
         string=date.split("-")
         year=int(string[0])
         print(year)
-
