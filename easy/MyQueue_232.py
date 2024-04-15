@@ -4,25 +4,24 @@
 @Author  ：Master
 @Date    ：2024/4/15 18:25 
 '''
-class Stack:
+
+
+class MyQueue:
     def __init__(self):
         self.stack = []
 
-    def is_empty(self):
-        return len(self.stack) == 0
+    def push(self, x: int) -> None:
+        self.stack1.insert(x)
 
-    def push(self, item):
-        self.stack.append(item)
 
-    def pop(self):
-        if self.is_empty():
-            return None
+    def pop(self) -> int:
+        self.stack.reverse()
         return self.stack.pop()
 
-    def peek(self):
-        if self.is_empty():
+    def peek(self) -> int:
+        if len(self.stack) == 0:
             return None
         return self.stack[-1]
 
-    def size(self):
-        return len(self.stack)
+    def empty(self) -> bool:
+        return len(self.stack) == 0
