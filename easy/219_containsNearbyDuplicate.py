@@ -1,6 +1,6 @@
 '''
 @Project ：Python 
-@File    ：containsNearbyDuplicate_219.py
+@File    ：219_containsNearbyDuplicate.py
 @Author  ：YCQ
 @Date    ：2024/4/4 23:28 
 '''
