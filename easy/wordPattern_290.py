@@ -17,4 +17,11 @@ class Solution:
         if len(pattern)!=len(str2):
             return False
         return  list(map(pattern.index,pattern))==list(map(str2.index,str2))
+    def wordPattern_2(self, pattern: str, s: str) -> bool:
+        '''
+        使用hash表来判断
+        :param pattern:
+        :param s:
+        :return:
+        '''
 
