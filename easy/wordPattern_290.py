@@ -5,14 +5,16 @@
 @Date    ：2024/4/22 18:26 
 '''
 class Solution:
-    def wordPattern(self, pattern: str, s: str) -> bool:
+    def wordPattern_1(self, pattern: str, s: str) -> bool:
         '''
         给定两个字符串，判定两个字符串 模式是不是相同
         :param pattern:
         :param s:
         :return:
         '''
-        list1=list(pattern)
-        list2=str.split(str)
-        if len(list1)!=len(list2):
+
+        str2=s.split(" ")
+        if len(pattern)!=len(str2):
             return False
+        return  list(map(pattern.index,pattern))==list(map(str2.index,str2))
+
