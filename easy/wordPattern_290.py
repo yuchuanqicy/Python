@@ -24,4 +24,15 @@ class Solution:
         :param s:
         :return:
         '''
+        hash1={}
+        hash2=dict()
+        list1=list(pattern)
+        list2=s.split(" ")
+        if len(list1)!=len(list2):
+            return False
+        for c,s in zip(list1,list2):
+            if (c in hash1 and hash1[c]!=s)  or (s in hash2 and hash2[s]!=c):
+                return False
+        return True
+
 
