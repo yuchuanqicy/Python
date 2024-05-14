@@ -35,4 +35,28 @@ class Solution:
         :return:
         '''
         return list(set(nums1) & set(nums2))
-
+    def intersection3(self, nums1: List[int],nums2: List[int]) -> List[int]:
+        '''
+        列表推导式暴力解法
+        :param nums1:
+        :param nums2:
+        :return:
+        '''
+        return  list(set(i for i in nums1 if  i in nums2))
+    def intersection4(self, nums1: List[int],nums2: List[int]) -> List[int]:
+        '''
+        hash表做法
+        :param nums1:
+        :param nums2:
+        :return:
+        '''
+        res=[]
+        hash={}
+        for i in nums1:
+            if not  hash.get(i):
+                hash[i]=1
+        for i in nums2:
+            if hash.get(i):
+                res.append(i)
+                hash[i]=0
+        return res
