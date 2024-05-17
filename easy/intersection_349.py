@@ -45,7 +45,7 @@ class Solution:
         return  list(set(i for i in nums1 if  i in nums2))
     def intersection4(self, nums1: List[int],nums2: List[int]) -> List[int]:
         '''
-        hash表做法
+        hash表做法,需要额外的存储空间
         :param nums1:
         :param nums2:
         :return:
