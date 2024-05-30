@@ -16,6 +16,9 @@ class Solution:
         left=0
         right=n
         while left<=right:
+            # 当left和right很大时，会int类型溢出，但是python会自动转型，转成long类型，所以不会报错
+            # 还有求中位数的写法（left+right）>>1
+            # （right-left）//2 +left
             mid=(left+right)//2
             if -1==self.guess(mid):
                 right=mid-1
