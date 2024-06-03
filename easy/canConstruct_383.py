@@ -22,3 +22,9 @@ class Solution:
             if i not in hash2:
                 return False
         return True
+    def canConstruct_2(self, ransomNote: str,magazine: str) -> bool:
+
+        return collections.Counter(ransomNote)<=collections.Counter(magazine)
+
+    def canConstruct_3(self, ransomNote: str,magazine: str) -> bool:
+       pass
